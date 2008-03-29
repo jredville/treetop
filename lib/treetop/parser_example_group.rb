@@ -96,7 +96,7 @@ module Treetop
         unless not_parsed?
           "expected input not to be parsed because #{@failure_message}"
         else
-          "failure message was incorrect\nexpected: #{@failure_message},\n     got: #{@parser.failure_message}"
+          "failure message was incorrect\nexpected: #{@failure_message},\n     got: #{@parser.failure_reason}"
         end
       end
 
